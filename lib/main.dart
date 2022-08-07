@@ -11,13 +11,14 @@ class Car {
   int speed = 147;
   String name = "jopel";
   void toPrint() {
-    print("speed - $speed\nname - $name");
+    print("speed - $speed name - $name");
   }
 }
 Car registered(int speed1, String name1) {
   Car newCar = Car();
   newCar.speed = speed1;
   newCar.name = name1;
+  print("speed - ${newCar.speed} name - ${newCar.name}");
   return newCar;
 }
 
