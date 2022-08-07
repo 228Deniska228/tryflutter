@@ -4,7 +4,9 @@ void main() {
 //  runApp(const MyApp());
 //   Car new1 = Car();
 //   new1.toPrint();
-  registered(228, "maZda").toPrint();
+  registered().toPrint();
+  registered(name1: "porshen").toPrint();
+  registered(speed1: 228, name1: "maZda").toPrint();
 }
 
 class Car {
@@ -14,11 +16,10 @@ class Car {
     print("speed - $speed name - $name");
   }
 }
-Car registered(int speed1, String name1) {
+Car registered({int speed1 = 147, String name1 = "jopel"}) {
   Car newCar = Car();
   newCar.speed = speed1;
   newCar.name = name1;
-  print("speed - ${newCar.speed} name - ${newCar.name}");
   return newCar;
 }
 
